@@ -1,0 +1,4 @@
+Esta linea , debería de sobrescribir todo el txt 
+Este fichero esta escrito utilizando FileWriter , ademas podemos seleccionar si queremos sobrescribir el fichero o no . 
+Esta segunda linea , deberia de aparece justo abajo de la anterior y ademas estamos seleccionando que no queremos sobrescribir el fichero. 
+Parece que aqui tendremos un salto de linea

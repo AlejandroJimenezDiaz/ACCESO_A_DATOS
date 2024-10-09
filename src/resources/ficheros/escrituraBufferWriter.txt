@@ -1,0 +1,2 @@
+Hola , este fichero es creado y escrito utilziando BufferWriter
+Esta linea es una prueba de salto y para no sobrescribir
