@@ -25,16 +25,32 @@ public class PruebaGestionFichero {
 //        gestionFicheroLectura descifrar = new gestionFicheroLectura();
 //        descifrar.lecturaTextoPlano("src/resources/ficheros/cifrado.txt");
          gestorFicheroCombinado GestorFicheroCombinado = new gestorFicheroCombinado();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Introduce que quieres hacer");
-        int opcion = scanner.nextInt();
-        switch (opcion) {
-            case 1:
-                GestorFicheroCombinado.cifrado("src/resources/ficheros/cifrado.txt");
-                break;
-            case 2:
-                GestorFicheroCombinado.descifrarFichero("src/resources/ficheros/cifrado.txt");
-                break;
-        }
+         Scanner scanner = new Scanner(System.in);
+
+        int opcion = 0;
+        do {
+
+            System.out.println("Introduce que quieres hacer");
+            System.out.println("1 -> Cifrar fichero con numeros" + "\n" +
+                    "2 -> Descifrar fichero numeros" + "\n" +
+                    "3 -> Cifrar fichero con letras" + "\n" +
+                    "4 -> Descifrar Fichero Letras" + "\n");
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    GestorFicheroCombinado.cifrado("src/resources/ficheros/cifradoNumero.txt");
+                    break;
+                case 2:
+                    GestorFicheroCombinado.descifrarFichero("src/resources/ficheros/cifradoNumero.txt");
+                    break;
+                case 3:
+                    GestorFicheroCombinado.cifradoLetras("src/resources/ficheros/cifradoLetra.txt");
+                    break;
+                case 4 :
+                    GestorFicheroCombinado.descifrarFicheroLetra("src/resources/ficheros/cifradoLetra.txt");
+                    break;
+            }
+        }while (opcion != 0);
     }
 }
